@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NIT3213App</string>
+    <string name="desc_scroll_to_top">Scroll to top</string>
+    <string name="dashboard_logo">Dashboard Logo</string>
+    <string name="detail_logo">Details Logo</string>
+    <string name="desc_back_to_dashboard">Back to dashboard</string>
+    <string name="desc_back_to_login">Go back to login</string>
+    <string name="desc_logout">Logout</string>
+    <string name="desc_dashboard_logo">Dashboard logo</string>
+    <string name="welcome_fmt">Welcome, %1$s</string>
+    <string name="desc_detail_logo">Details screen logo</string>
+    <string name="desc_back">Go back to previous screen</string>
+
+
+
+</resources>

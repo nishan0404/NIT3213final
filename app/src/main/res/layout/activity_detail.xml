@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:elevation="2dp"
+    tools:context=".DetailActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDetail"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="#1976D2"
+        android:elevation="4dp"
+
+        app:title="Details"
+        app:titleTextColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Scrollable container for details -->
+    <ScrollView
+        android:id="@+id/scrollDetails"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintTop_toBottomOf="@id/toolbarDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/imgDashboardLogoBottom">
+
+
+    <LinearLayout
+            android:id="@+id/containerDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center_horizontal" />
+    </ScrollView>
+
+    <!-- Bottom-centered logo (Dashboard) -->
+    <ImageView
+        android:id="@+id/imgDashboardLogoBottom"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_dashboard_logo"
+        android:contentDescription="@string/desc_back_to_dashboard"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <!-- Back to the Dashboard -->
+    <ImageView
+        android:id="@+id/imgBackArrowBottom"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_back_arrow"
+        android:contentDescription="@string/desc_back"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!-- Logout button at the Details page-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textAllCaps="false"
+        app:icon="@drawable/ic_logout"
+        app:iconPadding="8dp"
+        app:iconGravity="textStart"
+        app:iconTint="@android:color/white"
+        android:backgroundTint="#1976D2"
+        android:textColor="@android:color/white"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
